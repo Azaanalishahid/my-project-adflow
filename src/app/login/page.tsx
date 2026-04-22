@@ -61,7 +61,7 @@ function LoginContent() {
   return (
     <div style={{ display: 'flex', minHeight: 'calc(100vh - 80px)', alignItems: 'center', justifyContent: 'center', background: 'transparent', padding: '0 1rem' }}>
       
-      <div className="animate-fade-in" style={{ position: 'relative', w: '100%', maxWidth: '440px', width: '100%' }}>
+      <div className="animate-fade-in" style={{ position: 'relative', maxWidth: '440px', width: '100%' }}>
         <div style={{ position: 'absolute', top: '-2rem', left: '50%', transform: 'translateX(-50%)', zIndex: 10 }}>
            <div style={{ background: 'var(--primary)', padding: '1rem', borderRadius: '1.25rem', boxShadow: '0 10px 40px var(--primary-glow)', transform: 'rotate(5deg)' }}>
              <Sparkles className="text-white" size={32} />

@@ -34,6 +34,8 @@ export interface Ad {
   created_at: string;
   published_at?: string;
   expires_at?: string;
+  profiles?: { email: string };
+  payments?: Payment[];
 }
 
 export interface Payment {

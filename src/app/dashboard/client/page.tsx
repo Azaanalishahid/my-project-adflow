@@ -187,7 +187,7 @@ export default function ClientDashboard() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
                   {/* Image with Glow */}
                   <div style={{ position: 'relative', width: '5.5rem', height: '5.5rem', flexShrink: 0 }}>
-                    <div style={{ position: 'absolute', inset: '-4px', background: 'var(--primary)', opacity: 0.1, blur: '10px', borderRadius: '1rem' }} />
+                    <div style={{ position: 'absolute', inset: '-4px', background: 'var(--primary)', opacity: 0.1, filter: 'blur(10px)', borderRadius: '1rem' }} />
                     <div style={{ width: '100%', height: '100%', position: 'relative', borderRadius: '1rem', overflow: 'hidden', border: '1px solid var(--border)' }}>
                       <img src={ad.image_url || 'https://via.placeholder.com/100'} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         onError={(e) => { (e.target as HTMLImageElement).src = 'https://via.placeholder.com/100' }} />
