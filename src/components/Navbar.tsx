@@ -22,7 +22,10 @@ export default function Navbar() {
     getUser()
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null)
+      const u = session?.user ?? null
+      setUser(u)
+      if (u) setRole(u.user_metadata?.role || 'client')
+      else setRole(null)
     })
     return () => subscription.unsubscribe()
   }, [supabase])
@@ -72,7 +75,7 @@ export default function Navbar() {
           {user ? (
             <>
               <Link
-                href={`/dashboard/${role}`}
+                href="/dashboard"
                 style={{
                   display: 'flex', alignItems: 'center', gap: '0.5rem',
                   padding: '0.5rem 1rem', borderRadius: '0.75rem',
