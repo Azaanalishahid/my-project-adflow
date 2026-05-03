@@ -85,5 +85,5 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  Built with ❤️ for the next generation of advertisers.
+  Developed by ❤️Azaan Ali Shahid .
 </p>
